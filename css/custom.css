@@ -1,3 +1,53 @@
+@font-face {
+    font-family: 'BwSurco';
+    src: url('../static/fonts/BwSurcoDEMO-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BwSurcoMedium';
+    src: url('../static/fonts/BwSurcoDEMO-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BwSurcoBold';
+    src: url('../static/fonts/BwSurcoDEMO-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     background-color: #fff5e6;
+    font-family: 'BwSurcoBold';
+}
+
+.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+    font-family: 'BwSurcoBold';
+}
+
+.header-shadow {
+    box-shadow: 0 7px 10px rgba(0,0,0,.1);
+}
+
+.content {
+    max-width: 1366px; 
+    margin: 0 auto; 
+    position: relative;
+}
+
+.content-filters {
+    font-size: 1rem;
+}
+
+.phone-number {
+    font: 700 2.25rem/2.25rem, BwSurco, Helvetica, sans-serif;
+    color: #360300;
+    position: relative;
+}
+
+.phone-number-support {
+    color: #c40022;
 }

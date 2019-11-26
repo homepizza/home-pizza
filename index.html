@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-
     <!-- Meta information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,48 +13,120 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-        <div>
-            <div class="uk-background uk-padding">Логотип</div>
-        </div>
-        <div>
-            <div class="uk-background uk-padding">Слоган, соц медиа</div>
-        </div>
-        <div>
-            <div class="uk-background uk-padding">ЛК + баллы, телефоны</div>
-        </div>
-    </div>
-    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-        <div>
-            <div class="uk-background uk-padding">Меню</div>
-        </div>
-    </div>
-    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
-        <div>
-            <div class="uk-background uk-padding">Слайдер</div>
-        </div>
-    </div>
-    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" style="max-width: 1366px; margin: 0 auto; position: relative;" uk-grid>
-        <div>
-            <div class="uk-background-primary uk-padding uk-light">
-                <!-- Колонка с позициями -->
-                <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">Item</div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">Item</div>
-                    </div>
-                    <div>
-                        <div class="uk-card uk-card-default uk-card-body">Item</div>
-                    </div>
+
+    <!-- Шапка сайта -->
+    <div class="uk-container uk-width-expand" style="background-color: #fff;">
+        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center content" uk-grid>
+            <div>
+                <div class="uk-background-muted uk-padding">Логотип</div>
+            </div>
+            <div>
+                <div class="uk-background-muted uk-padding">Слоган, соц медиа</div>
+            </div>
+            <div>
+                <div class="uk-background-muted uk-padding">ЛК + баллы, телефоны
+                        <span class="phone-number">
+                            <a href="tel:382-0-555">382-0-555</a>
+                        </span>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Меню -->
+    <div class="uk-container uk-width-expand header-shadow" style="background-color: #fff;">
+        <nav class="uk-navbar-container content" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="">Пицца</a></li>
+                    <li class="uk-parent"><a href="">Роллы</a></li>
+                    <li class="uk-parent"><a href="">Пироги</a></li>
+                    <li class="uk-parent"><a href="">ВОК</a></li>
+                    <li class="uk-parent"><a href="">Ланчи</a></li>
+                    <li class="uk-parent"><a href="">Закуски</a></li>
+                    <li class="uk-parent"><a href="">Салаты и супы</a></li>
+                    <li class="uk-parent"><a href="">Десерты</a></li>
+                    <li class="uk-parent"><a href="">Напитки</a></li>
+                    <li class="uk-parent"><a href="">Соусы и Приборы</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Слайдер -->
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
         <div>
-            <div class="uk-background-primary uk-padding uk-light uk-width-1-3@m">
-                <!-- Колонка с корзиной -->
-                Cart column
+            <div class="uk-background">
+                <div uk-slideshow="min-height: 300; max-height: 536; animation: scale; autoplay: true; autoplay-interval: 5000">
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+        
+                                <ul class="uk-slideshow-items">
+                                    <li>
+                                        <img src="media/images/slider/birthday_2048х640.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="media/images/slider/cheese_border_2048х640.jpg" alt="" uk-cover>
+                                    </li>
+                                    <li>
+                                        <img src="media/images/slider/meat_border.png" alt="" uk-cover>
+                                    </li>
+                                </ul>
+                                
+                                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        
+                                <div class="uk-position-bottom-center uk-position-small">
+                                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-hidden-hover"></ul>
+                                </div>
+        
+                                <!-- <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"> -->
+        
+                                </ul>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Фильтры -->
+    <div class="uk-container uk-width-expand" style="background-color: #fff;">
+        <nav class="uk-navbar-container content" uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="">Все</a></li>
+                        <li class="uk-parent"><a href="">Мясо</a></li>
+                        <li class="uk-parent"><a href="">Рыба</a></li>
+                        <li class="uk-parent"><a href="">Острые</a></li>
+                        <li class="uk-parent"><a href="">Овощные</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+
+    <!-- Позиции + Корзина -->
+    <div class="uk-container uk-width-expand">
+        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center content" uk-grid>
+            <div>
+                <div class="uk-background-primary uk-padding uk-light">
+                    <!-- Колонка с позициями -->
+                    <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-body">Item</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-background-primary uk-padding uk-light uk-width-1-3@m">
+                    <!-- Колонка с корзиной -->
+                    Cart column
+                </div>
             </div>
         </div>
     </div>
