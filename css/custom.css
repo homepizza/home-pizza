@@ -28,6 +28,19 @@ body {
     font-family: 'BwSurcoBold';
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'BwSurco, Helvetica, sans-serif';
+}
+
+.news-feed {
+    padding-top: 40px;
+}
+
+.news-feed-title {
+    font-family: 'BwSurco';
+    font-size: 1.5rem;
+}
+
 .uk-padding-custom {
     padding: 40px 20px 40px 0px;
 }
@@ -58,4 +71,8 @@ body {
 
 .phone-number-support {
     color: #c40022;
+}
+
+.clearfix {
+    height: 50px;
 }
