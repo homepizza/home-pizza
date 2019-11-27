@@ -28,6 +28,14 @@ body {
     font-family: 'BwSurcoBold';
 }
 
+.uk-padding-custom {
+    padding: 40px 20px 40px 0px;
+}
+
+.uk-custom-cart {
+    width: 301.75px;
+}
+
 .header-shadow {
     box-shadow: 0 7px 10px rgba(0,0,0,.1);
 }
