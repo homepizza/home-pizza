@@ -32,6 +32,28 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'BwSurco, Helvetica, sans-serif';
 }
 
+.up {
+    position: fixed;
+    display: block;
+    outline: none !important;
+    right: 20px;
+    bottom: 40px;
+    z-index: 1000;
+}
+
+.up-icon {
+    width: 48px;
+    height: 48px;
+    background: #eaeaea url('../static/images/icons/scroll.svg') no-repeat 50% 46%;
+    display: block !important;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+i.up-icon:hover {
+    background: #b6b6b6e0 url('../static/images/icons/scroll.svg') no-repeat 50% 46%;
+}
+
 .news-feed {
     padding-top: 40px;
 }
