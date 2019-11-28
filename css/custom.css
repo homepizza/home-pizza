@@ -97,6 +97,10 @@ a.header-link:hover {
     width: 280px;
 }
 
+.uk-custom-nav li a {
+    min-height: 47px;
+}
+
 .content {
     max-width: 1366px; 
     margin: 0 auto; 
