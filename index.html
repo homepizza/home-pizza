@@ -20,10 +20,10 @@
             <div>
                 <div class="uk-background-muted uk-padding">Логотип</div>
             </div>
-            <div>
+            <div class="uk-visible@l">
                 <div class="uk-background-muted uk-padding">Слоган, соц медиа</div>
             </div>
-            <div>
+            <div class="uk-visible@l">
                 <div class="uk-background-muted uk-padding">ЛК + баллы, телефоны
                         <span class="phone-number">
                             <a href="tel:382-0-555">382-0-555</a>
@@ -34,7 +34,7 @@
     </div>
 
     <!-- Меню -->
-    <div class="uk-container uk-width-expand header-shadow" style="background-color: #fff;" uk-sticky>
+    <div class="uk-container uk-width-expand header-shadow uk-visible@l" style="background-color: #fff;" uk-sticky>
         <nav class="uk-navbar-container content" uk-navbar>
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
@@ -88,7 +88,7 @@
     </div>
 
     <!-- Фильтры -->
-    <div class="uk-container uk-width-expand" style="background-color: #fff;" uk-sticky="offset: 80">
+    <div class="uk-container uk-width-expand uk-visible@l" style="background-color: #fff;" uk-sticky="offset: 80">
         <nav class="uk-navbar-container content" uk-navbar>
                 <div class="uk-navbar-left">
                     <ul class="uk-navbar-nav">
@@ -108,7 +108,16 @@
             <div>
                 <div class="uk-background uk-padding-custom uk-light">
                     <!-- Колонка с позициями -->
-                    <div class="uk-grid-column-small uk-grid-row-medium uk-child-width-1-3@s uk-width-3-3@m uk-text-center" uk-grid>
+                    <div 
+                        class="
+                            uk-grid-column-small 
+                            uk-grid-row-medium 
+                            uk-child-width-1-3@l uk-width-3-3@l
+                            uk-child-width-1-2@s uk-width-2-2@s
+                            uk-text-center
+                        " 
+                        uk-grid
+                    >
                         <div>
                             <div class="uk-card uk-card-default uk-card-body">Item</div>
                         </div>
@@ -253,10 +262,14 @@
                             <div class="uk-card uk-card-default uk-card-body">Item</div>
                         </div>
                     </div>
+                    <!-- Scroll Button -->
+                    <a href="#begin" class="up uk-hidden@m" uk-scroll="duration: 750;">
+                        <i class="up-icon"></i>
+                    </a>
                 </div>
             </div>
-            <div class="uk-width-1-4@m">
-                <div class="uk-background uk-padding-custom uk-light" style="z-index: 0;" uk-sticky="offset: 130; bottom: true">
+            <div class="uk-width-1-4@s uk-visible@m">
+                <div class="uk-background uk-padding-custom uk-light uk-visible@m" style="z-index: 0;" uk-sticky="offset: 130; bottom: true">
                     <!-- Колонка с корзиной -->
                     <div class="uk-card uk-card-default uk-custom-cart uk-card-body">Cart</div>
                 </div>
@@ -313,6 +326,52 @@
             <!-- Информационный блок -->
             <div class="uk-container uk-width-expand" style="margin-bottom: 30px; margin-top: 100px;">
                 <div class="uk-grid-collapse uk-child-width-expand@s uk-text-right" uk-grid>
+                    <div class="uk-hidden@l">
+                            <div class="uk-background uk-text-left">
+                                <!-- Расписание приема заказов -->
+                                <div id="schedule" style="margin-left: 10%;">
+                                    <span>
+                                        Заказы на доставку <br>пиццы принимаются
+                                    </span>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <span>пн</span>
+                                                <span>10:00 - 00:00</span>
+                                            </li>
+                                            <li>
+                                                <span>вт</span>
+                                                <span>10:00 - 00:00</span>
+                                            </li>
+                                            <li>
+                                                <span>ср</span>
+                                                <span>10:00 - 00:00</span>
+                                            </li>
+                                            <li>
+                                                <span>чт</span>
+                                                <span>10:00 - 00:00</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="special">
+                                        <ul>
+                                            <li>
+                                                <span>пт</span>
+                                                <span>с 10:00</span>
+                                            </li>
+                                            <li>
+                                                <span>сб</span>
+                                                <span>круглосуточно</span>
+                                            </li>
+                                            <li>
+                                                <span>вс</span>
+                                                <span>до 00:00</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <div>
                         <div class="uk-background uk-width-expand">
                             <!-- Телефон и информация компании -->
@@ -336,7 +395,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="uk-visible@l">
                         <div class="uk-background uk-text-left">
                             <!-- Расписание приема заказов -->
                            <div id="schedule" style="margin-left: 10%;">
@@ -382,7 +441,7 @@
                            </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="uk-visible@l">
                         <div class="uk-background uk-text-left" style="margin-left: 20%;">
                             <div id="footer-menu" class="uk-width-expand" uk-grid>
                                 <div>
@@ -412,7 +471,6 @@
         </div>
         <div class="clearfix"></div>
     </div>
-
 
 </body>
 <script src="static/uikit/js/uikit.min.js"></script>
