@@ -21,7 +21,7 @@
 
 body {
     background-color: #fff5e6;
-    font-family: 'BwSurcoBold';
+    font-family: 'BwSurco';
 }
 
 .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
@@ -30,6 +30,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'BwSurco, Helvetica, sans-serif';
+}
+
+a {
+    color: #c40022;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
 }
 
 .up {
@@ -59,8 +68,25 @@ i.up-icon:hover {
 }
 
 .news-feed-title {
-    font-family: 'BwSurco';
     font-size: 1.5rem;
+}
+
+.news-item div{
+    font-size: .75rem;
+}
+
+.news-item a {
+   font-size: .875rem;
+   border-bottom: 1px solid; 
+}
+
+a.header-link {
+    text-decoration: none;
+    color: #000;
+}
+
+a.header-link:hover {
+    color: #c40022;
 }
 
 .uk-padding-custom {
@@ -97,4 +123,9 @@ i.up-icon:hover {
 
 .clearfix {
     height: 50px;
+}
+
+#footer-menu div img {
+    width: 62px;
+    height: 80px;
 }
