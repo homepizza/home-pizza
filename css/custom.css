@@ -41,6 +41,7 @@
     }
     .mobile-menu-icon {
         padding-top: 2px !important;
+        cursor: pointer;
     }
 }
 
@@ -80,6 +81,11 @@ li.uk-parent a:hover {
     float: left;
     padding-top: 5px;
     padding-right: 10px;
+    cursor: pointer;
+}
+
+.mobile-menu-bar {
+    background: #360300;
 }
 
 h1, h2, h3, h4, h5, h6 {
