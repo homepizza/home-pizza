@@ -19,13 +19,67 @@
     font-style: normal;
 }
 
+@media screen and (max-device-width: 374px) {
+    .logo-link {
+        display: block;
+        width: 33px;
+        height: 20px;
+        background-image: url(../static/images/logo_sign.svg);
+        background-size: cover;
+        margin-left: 60%;
+    }
+}
+
+@media screen and (min-device-width: 374px) {
+    .logo-link {
+        display: block;
+        width: 110px;
+        height: 20px;
+        background-image: url(../static/images/logo_text_new.svg);
+        background-size: cover;
+        margin-left: 36%;
+    }
+    .mobile-menu-icon {
+        padding-top: 2px !important;
+    }
+}
+
+
 body {
     background-color: #fff5e6;
     font-family: 'BwSurco';
 }
 
 .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
-    font-family: 'BwSurcoBold';
+    font-family: 'BwSurco';
+    color: #360300 !important;
+}
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #fff;
+}
+
+li.uk-active a{
+    color: #c40022 !important;
+}
+
+li.uk-parent a:hover {
+    color: #c40022 !important;
+}
+
+.menu a {
+    font-size: 1.125rem !important;
+    text-transform: none !important;
+}
+
+.menu-filters a {
+    font-size: 1rem !important;
+    text-transform: none !important;
+}
+
+.mobile-menu-icon {
+    float: left;
+    padding-top: 5px;
+    padding-right: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
