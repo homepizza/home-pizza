@@ -45,7 +45,6 @@
     }
 }
 
-
 body {
     background-color: #fff5e6;
     font-family: 'BwSurco';
@@ -65,6 +64,16 @@ li.uk-active a{
 
 li.uk-parent a:hover {
     color: #c40022 !important;
+}
+
+.main-menu ul {
+    width: 1366px;
+}
+
+.main-menu ul li:not(:first-child) {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
 }
 
 .menu a {
@@ -173,7 +182,9 @@ a.header-link:hover {
 }
 
 .uk-custom-cart {
-    width: 275px;
+    max-width: 301px;
+    min-width: 270px;
+    /* float: right; */
 }
 
 .uk-custom-nav li a {
@@ -190,13 +201,68 @@ a.header-link:hover {
     font-size: 1rem;
 }
 
+.header-content {
+    margin-top: 17px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+
+.logo {
+    padding-top: 1%;
+    padding-left: 10px;
+}
+
+.slogan {
+    padding-top: 13px;
+    padding-left: 17%;
+    width: 380px;
+}
+
+.sign-block {
+    padding-right: 5%;
+}
+
+.sign-in {
+    height: 22px;
+}
+
+.sign-in img {
+    width: 20px;
+    height: 16px;
+}
+
+/* Иконка */
+.sign-in a span {
+    vertical-align: middle;
+    font: 1.125rem 'BwSurco', Helvetica, sans-serif;
+    color: #000;
+}
+
+
+
 .phone-number {
-    font: 700 2.25rem/2.25rem, BwSurco, Helvetica, sans-serif;
+    height: 50px;
+}
+
+.phone-number a {
+    font-weight: 700;
+    font-stretch: normal;
+    font-size: 2.25rem;
+    font-family: 'BwSurcoBold', Helvetica, sans-serif;
+    white-space: nowrap;
     color: #360300;
     position: relative;
 }
 
-.phone-number-support {
+.phone-number-support a{
+    display: block;
+    font: 700 1.25rem/1.25rem 'BwSurcoBold', Helvetica, sans-serif;
+    color: #c40022;
+    height: 15px;
+}
+
+.phone-number-support span {
+    font: 500 0.75rem/0.75rem 'BwSurcoBold', Helvetica, sans-serif;
     color: #c40022;
 }
 
@@ -208,3 +274,44 @@ a.header-link:hover {
     width: 62px;
     height: 80px;
 }
+
+.social-links {
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.social-links a {
+    width: 24px;
+    height: 24px;
+    background: url('../static/images/icons/sprite-social-icons.svg') no-repeat;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.2s ease-out;
+}
+
+.social-links a:hover{
+    transform: scale(1.3);
+}
+
+.icon-vk {
+    background-position: 100% 100% !important;
+}
+
+.icon-fb {
+    background-position: 0 0 !important;
+}
+
+.icon-instagram {
+    background-position: 0 100% !important;
+}
+
+.icon-flamp {
+    background-position: 100% 0 !important;
+}
+
+
