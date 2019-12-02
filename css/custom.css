@@ -45,7 +45,7 @@
     }
 }
 
-@media screen and (max-device-width: 1366px) {
+/* @media screen and (max-device-width: 1366px) {
     .main-menu ul {
         width: 1280px !important;
     }
@@ -55,7 +55,7 @@
     .main-menu ul {
         width: 1200px !important;
     }
-}
+} */
 
 body {
     background-color: #fff5e6;
@@ -78,7 +78,7 @@ li.uk-parent a:hover {
     color: #c40022 !important;
 }
 
-.main-menu ul {
+/* .main-menu ul {
     width: 1366px;
 }
 
@@ -86,7 +86,7 @@ li.uk-parent a:hover {
     display: block;
     width: 100%;
     white-space: nowrap;
-}
+} */
 
 .menu a {
     font-size: 1.125rem !important;
