@@ -282,6 +282,35 @@ a.header-link:hover {
     height: 10px;
 }
 
+#schedule {
+    font: 500 1.125rem 'BwSurcoMedium', 'Helvetica', sans-serif;
+    color: #222;
+    margin-left: 10%;
+}
+
+#schedule ul.special {
+    padding-top: 0px !important;
+}
+
+#schedule ul {
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+#schedule ul li {
+    padding-top: 3px;
+    list-style: none;
+}
+
+#schedule ul li span:first-child {
+    width: 50px;
+    display: inline-block;
+}
+
+#schedule ul.special {
+    color: #c40022;
+}
+
 #footer-menu div img {
     width: 62px;
     height: 80px;
@@ -294,6 +323,35 @@ a.header-link:hover {
 #footer-menu div ul li a{
     color: #360300 !important;
     font-size: .875rem;
+}
+
+.footer-phone {
+    font: 500 1.5rem 'BwSurcoMedium', 'Helvetica', sans-serif;
+    color: #222;
+}
+
+.footer-phone + h2 {
+    font: 500 .875rem 'BwSurcoMedium', 'Helvetica', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    margin-top: 10px;
+}
+
+div#copyright {
+    font: 500 .875rem 'BwSurco', 'Helvetica', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+#copyright a {
+    color: #000;
+    text-decoration-line: underline;
+}
+
+#copyright a:hover {
+    text-decoration-line: unset;
 }
 
 .social-links {
