@@ -45,6 +45,18 @@
     }
 }
 
+@media screen and (max-device-width: 1366px) {
+    .main-menu ul {
+        width: 1280px !important;
+    }
+}
+
+@media screen and (max-device-width: 1280px) {
+    .main-menu ul {
+        width: 1200px !important;
+    }
+}
+
 body {
     background-color: #fff5e6;
     font-family: 'BwSurco';
