@@ -279,12 +279,21 @@ a.header-link:hover {
 }
 
 .clearfix {
-    height: 50px;
+    height: 10px;
 }
 
 #footer-menu div img {
     width: 62px;
     height: 80px;
+}
+
+#footer-menu div ul li {
+    height: 24px;
+}
+
+#footer-menu div ul li a{
+    color: #360300 !important;
+    font-size: .875rem;
 }
 
 .social-links {
