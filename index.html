@@ -214,10 +214,11 @@
                     <div 
                         class="
                             uk-grid-column-small 
-                            uk-grid-row-medium 
+                            uk-grid-row-large 
                             uk-child-width-1-3@l uk-width-3-3@l
                             uk-child-width-1-2@s uk-width-2-2@s
                             uk-text-center
+                            items-cards
                         " 
                         uk-grid
                     >
@@ -225,6 +226,9 @@
                             <div class="uk-card uk-card-default uk-card-hover">
                                 <div class="uk-card-media-top">
                                     <img data-src="media/images/items/new_item3.jpg" alt="Капрезе" uk-img>
+                                    <div class="uk-position-top uk-dark" style="opacity: 0.8;">
+                                        <a href="#">Состав</a>
+                                    </div>
                                 </div>
                                 <div class="uk-card-body">Капрезе (цена зачеркнута)</div>
                             </div>
@@ -234,9 +238,15 @@
                             <div class="uk-card uk-card-default uk-card-hover">
                                 <div class="uk-card-media-top uk-inline">
                                     <img data-src="media/images/items/new_item3.jpg" alt="Капрезе" uk-img>
-                                    <div class="uk-overlay-default uk-position-cover"></div>
-                                    <div class="uk-overlay uk-position-bottom uk-dark">
-                                        <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="uk-overlay-default uk-position-cover">
+                                        <div class="uk-position-cover uk-text-left item-ingredients">
+                                            <p>     
+                                                Помидоры, перец болгарский, сыр Фетакса, сыр Моцарелла, томатный соус.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-position-top uk-dark">
+                                        <a href="#">Состав</a>
                                     </div>
                                 </div>
                                 <div class="uk-card-body">Капрезе cover</div>
@@ -245,8 +255,11 @@
                         
                         <div>
                             <div class="uk-card uk-card-default uk-card-hover">
-                                <div class="uk-card-media-top">
+                                <div class="uk-card-media-top uk-inline">
                                     <img data-src="media/images/items/new_combo6.jpg" alt="Капрезе" uk-img>
+                                    <div class="uk-position-top uk-dark" style="opacity: 0.8;">
+                                        <a href="#">Состав</a>
+                                    </div>
                                 </div>
                                 <div class="uk-card-body">Акция 6 пицц</div>
                             </div>
