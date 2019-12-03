@@ -62,6 +62,26 @@ body {
     font-family: 'BwSurco';
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'BwSurco, Helvetica, sans-serif';
+}
+
+a {
+    color: #c40022;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
 .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
     font-family: 'BwSurco';
     color: #360300 !important;
@@ -128,19 +148,6 @@ li.uk-parent a:hover {
     padding-left: 8px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'BwSurco, Helvetica, sans-serif';
-}
-
-a {
-    color: #c40022;
-}
-
-a:hover {
-    color: #000;
-    text-decoration: none;
-}
-
 .up {
     position: fixed;
     display: block;
@@ -199,8 +206,167 @@ a.header-link:hover {
     /* float: right; */
 }
 
+.uk-custom-cart > span {
+    font: 1.25rem 'BwSurco', 'Helvetica', sans-serif;
+    color: #360300;
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.uk-custom-cart .cart-total, .cart-button, .cart-info-actions {
+    padding-left: 20px;
+}
+
+.uk-custom-cart div.cart-total span:first-child {
+    font-size: 0.875rem;
+}
+
+.uk-custom-cart div.cart-total span:not(:first-child) {
+   display: block;
+   font: 500 2.25rem/2.25rem 'BwSurcoMedium', 'Helvetica', sans-serif;
+   color: #c40022;
+
+}
+
 .uk-custom-nav li a {
     min-height: 47px;
+}
+
+.cart-item-group {
+    display: block;
+    width: 100%;
+    padding: 10px 0px 1px 0px !important;
+    color: #444;
+    font-size: 1rem;
+}
+
+.cart-item-group div.cart-item-name {
+    color: #c40022;
+}
+
+.cart-item-group div.cart-item-description {
+    font-size: 0.875rem;
+}
+
+.cart-item-group div.cart-item-number {
+    position: absolute;
+    display: table;
+    right: 0;
+    margin-top: -44px;
+    margin-right: 0px;
+    width: 28%;
+}
+
+.cart-item-group div.cart-item-number input {
+    width: 16px;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0.25em 0.4em 0.3em;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    top: -.35em;
+}
+
+.cart-item-group div.cart-item-number span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    font-size: 0;
+    text-decoration: none;
+    background-color: #666;
+    margin: 3px 0 0;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.cart-item-group div.cart-item-number span.remove-item {
+    background-color: #c40022;
+}
+
+.cart-item-group div.cart-item-number span.remove-item::after {
+    width: 8px;
+    height: 2px;
+    font-size: 0;
+    background: #fff;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 4px;
+    top: 7px;
+}
+
+.cart-item-group div.cart-item-number span.add-item {
+    background-color: #367b36;
+}
+
+.cart-item-group div.cart-item-number span.add-item:before {
+    width: 2px;
+    height: 8px;
+    font-size: 0;
+    background: #fff;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 7px;
+    top: 4px;
+}
+
+.cart-item-group div.cart-item-number span.add-item:after {
+    width: 8px;
+    height: 2px;
+    font-size: 0;
+    background: #fff;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 4px;
+    top: 7px;
+}
+
+.cart-item-group ul {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.cart-item-group ul li {
+    list-style-type: none;
+    display: block;
+    padding-top: 5px;
+}
+
+.cart-item-group > span {
+    padding-left: 20px;
+}
+
+.cart-item-group:hover {
+    background-color: #feede7;
+    /* opacity: 0.8; */
+}
+
+.cart-info-actions {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 0.75rem;
+}
+
+.cart-info-actions span {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.cart-link {
+    text-decoration: underline;
+    color: #222 !important;
+}
+
+.cart-link:hover {
+    text-decoration: underline;
+    color: #c40022 !important;
 }
 
 .content {
@@ -211,6 +377,28 @@ a.header-link:hover {
 
 .content-filters {
     font-size: 1rem;
+}
+
+.add-custom-button {
+    color: #fff;
+    background-color: #c40022;
+    text-align: center;
+    padding: 6px 25px 8px;
+    font: 1.125rem 'BwSurco', 'Helvetica', sans-serif;
+    text-transform: unset;
+}
+
+.add-custom-button:hover {
+    background: #fd6d2e;
+}
+
+.cart-button {
+    margin-top: 25px;
+}
+
+.cart-button button.uk-button {
+    font: 1.25rem 'BwSurco', 'Helvetica', sans-serif;
+    padding: 8px 20px;
 }
 
 .header-content {

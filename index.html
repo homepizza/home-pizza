@@ -309,7 +309,7 @@
             <div class="uk-width-1-4@s uk-visible@m">
                 <div class="uk-background uk-padding-custom uk-light uk-visible@m" style="z-index: 0;" uk-sticky="offset: 100; bottom: true">
                     <!-- Колонка с корзиной -->
-                    <div class="uk-card uk-card-default uk-custom-cart uk-text-left uk-card-body">
+                    <div class="uk-card uk-card-default uk-custom-cart uk-text-left">
                         <span>Ваш заказ</span>
                         <div class="cart-item-group">
                             <span>Пицца</span>
@@ -317,7 +317,11 @@
                                 <li>
                                     <div class="cart-item-name">Акция 6 пицц</div>
                                     <div class="cart-item-description">2199 р. — 30 см / 3275 гр.</div>
-                                    <div class="cart-item-number"><input type="number" value="1" min="1"></div>
+                                    <div class="cart-item-number">
+                                        <span class="remove-item">&nbsp;</span>
+                                        <input type="number" value="1" min="1">
+                                        <span class="add-item">&nbsp;</span>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -327,17 +331,29 @@
                                 <li>
                                     <div class="cart-item-name">Гренки чесночные</div>
                                     <div class="cart-item-description">165 р. — 200 / 30 / 30 гр.</div>
-                                    <div class="cart-item-number"><input type="number" value="2" min="1"></div>
+                                    <div class="cart-item-number">
+                                        <span class="remove-item">&nbsp;</span>
+                                        <input type="number" value="2" min="1">
+                                        <span class="add-item">&nbsp;</span>
+                                    </div>
                                 </li>
                                 <li>
                                     <div class="cart-item-name">Картофельные дольки</div>
                                     <div class="cart-item-description">175 р. — 170 / 30гр</div>
-                                    <div class="cart-item-number"><input type="number" value="1" min="1"></div>
+                                    <div class="cart-item-number">
+                                        <span class="remove-item">&nbsp;</span>
+                                        <input type="number" value="1" min="1">
+                                        <span class="add-item">&nbsp;</span>
+                                    </div>
                                 </li>
                                 <li>
                                     <div class="cart-item-name">Крылышки Баффало</div>
                                     <div class="cart-item-description">355 р. — 230 / 30 / 30 гр.</div>
-                                    <div class="cart-item-number"><input type="number" value="1" min="1"></div>
+                                    <div class="cart-item-number">
+                                        <span class="remove-item">&nbsp;</span>
+                                        <input type="number" value="1" min="1">
+                                        <span class="add-item">&nbsp;</span>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -345,10 +361,10 @@
                             <span>Итого:</span>
                             <span>3059.00 р</span>
                         </div>
-                        <div class="cart-button">
-                            <button class="uk-button uk-button-primary uk-button-large">Оформить заказ</button>
+                        <div class="cart-button uk-text-center">
+                            <button class="uk-button add-custom-button">Оформить заказ</button>
                         </div>
-                        <div class="cart-info-actions">
+                        <div class="cart-info-actions uk-text-center">
                             <a href="" class="cart-link">Правила продажи</a>
                             <span>|</span>
                             <a href="" class="cart-link">Отменить заказ</a>
