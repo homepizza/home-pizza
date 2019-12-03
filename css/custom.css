@@ -19,6 +19,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'icons';
+    src: url('../static/fonts/icons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @media screen and (max-device-width: 374px) {
     .logo-link {
         display: block;
@@ -610,6 +617,50 @@ div#copyright {
 
 .icon-flamp {
     background-position: 100% 0 !important;
+}
+
+.custom-icon {
+    position: relative;
+    display: block;
+}
+
+.custom-icon:before {
+    display: inline-block;
+    font-family: 'icons';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 1.4em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-new:before {
+    color: red;
+    content: "\EA06";
+}
+
+.icon-meat {
+
+}
+
+.icon-chicken {
+
+}
+
+.icon-sausage {
+
+}
+
+.icon-pepper {
+
+}
+
+.icon-carrot {
+
+}
+
+.icon-fish {
+
 }
 
 
