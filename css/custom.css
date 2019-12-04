@@ -445,7 +445,7 @@ div.uk-card-media-top .item-ingredients p {
 }
 
 .prices {
-    padding: 10px 13px;
+    padding: 10px 10px;
 }
 
 .prices sup {
@@ -689,6 +689,10 @@ div#copyright {
     left: 0;
     bottom: 10px;
     padding: 10px 10px;
+}
+
+.item-body {
+    margin-bottom: 70px !important;
 }
 
 .icon-new:before {
