@@ -274,6 +274,10 @@ div.uk-card-media-top .item-ingredients p {
     min-height: 47px;
 }
 
+.uk-card-custom-body {
+    padding: 17px 17px;
+}
+
 .cart-item-group {
     display: block;
     width: 100%;
@@ -637,33 +641,57 @@ div#copyright {
     -webkit-font-smoothing: antialiased;
 }
 
+.item-head div:first-child {
+    display: block;
+    font: 500 1.25rem 'BwSurcoMedium', 'Helvetica', sans-serif;
+    color: #360300;
+    padding: 0 0 5px;
+}
+
+.item-pack {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.item-pack div {
+    margin: 0 8px 0 0;
+}
+
 .icon-new:before {
     color: red;
     content: "\EA06";
 }
 
-.icon-meat {
-
+.icon-meat:before {
+    color: #bb6764;
+    content: "\EA05";
 }
 
-.icon-chicken {
-
+.icon-chicken:before {
+    color: #efa050;
+    content: "\EA02";
 }
 
-.icon-sausage {
-
+.icon-sausage:before {
+    color: #bb6764;
+    content: "\EA08";
 }
 
-.icon-pepper {
-
+.icon-pepper:before {
+    color: #d8232a;
+    content: "\EA07";
 }
 
-.icon-carrot {
-
+.icon-carrot:before {
+    color: #e7792b;
+    content: "\EA01";
 }
 
-.icon-fish {
-
+.icon-fish:before {
+    color: #efa489;
+    content: "\EA04";
 }
 
 
