@@ -224,6 +224,7 @@ div.uk-card-media-top div.uk-position-top a {
 
 div.uk-card-media-top img {
     width: 100%;
+    cursor: zoom-in;
 }
 
 div.uk-card-media-top .uk-overlay-default {
@@ -695,11 +696,11 @@ div#copyright {
     margin-bottom: 70px !important;
 }
 
-.sizes ul {
+.sizes ul, .oprions ul {
     padding-left: 0px;
 }
 
-.sizes ul li {
+.sizes ul li, .options ul li {
     list-style-type: none;
     list-style-position: initial;
 }
