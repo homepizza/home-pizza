@@ -35,6 +35,10 @@
         background-size: cover;
         margin-left: 30%;
     }
+    .uk-padding-custom {
+        padding: 40px 20px 40px 10px !important;
+        width: 100%;
+    }
 }
 
 @media screen and (min-device-width: 374px) {
@@ -431,10 +435,28 @@ div.uk-card-media-top .item-ingredients p {
     padding: 6px 25px 8px;
     font: 1.125rem 'BwSurco', 'Helvetica', sans-serif;
     text-transform: unset;
+    border: none;
+    outline: 0 !important;
+    cursor: pointer;
 }
 
 .add-custom-button:hover {
     background: #fd6d2e;
+}
+
+.prices {
+    padding: 10px 13px;
+}
+
+.prices sup {
+    font: 0.875rem/0.875rem 'BwSurco', 'Helvetica', sans-serif;
+    text-decoration: line-through;
+    color: #777;
+}
+
+.prices span {
+    font: 500 1.125rem/1.125rem 'BwSurcoMedium', 'Helvetica', sans-serif;
+    color: #000;
 }
 
 .cart-button {
@@ -643,6 +665,7 @@ div#copyright {
 
 .item-head div:first-child {
     display: block;
+    float: left;
     font: 500 1.25rem 'BwSurcoMedium', 'Helvetica', sans-serif;
     color: #360300;
     padding: 0 0 5px;
@@ -657,6 +680,15 @@ div#copyright {
 
 .item-pack div {
     margin: 0 8px 0 0;
+}
+
+
+.item-control {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 10px;
+    padding: 10px 10px;
 }
 
 .icon-new:before {
