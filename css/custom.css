@@ -695,6 +695,65 @@ div#copyright {
     margin-bottom: 70px !important;
 }
 
+.sizes ul {
+    padding-left: 0px;
+}
+
+.sizes ul li {
+    list-style-type: none;
+    list-style-position: initial;
+}
+
+.sizes ul li label {
+    white-space: nowrap;
+    color: #360300;
+    font: 1rem/1.25rem 'BwSurco', 'Helvetica', sans-serif;
+    vertical-align: text-bottom;
+}
+
+.sizes ul li input {
+    border: 1px solid #777 !important;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+/* .sizes ul li label:before {
+    width: 8px;
+    height: 8px;
+    background: #777;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    display: block;
+    left: 4px;
+    top: 6px;
+}
+
+.sizes ul li label:after {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    display: block;
+    left: 0;
+    top: 2px;
+}
+
+.sizes ul li input {
+    box-sizing: border-box;
+    padding: 0;
+    position: absolute;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+} */
+
+.options {
+
+}
+
 .icon-new:before {
     color: red;
     content: "\EA06";
