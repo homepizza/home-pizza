@@ -229,6 +229,10 @@ div.uk-card-media-top {
     width: 100%;
 }
 
+div.uk-card-media-top div.uk-position-top {
+    top: -0.3px;
+}
+
 div.uk-card-media-top div.uk-position-top a {
     font: 500 0.875rem/1.375rem 'BwSurcoMedium', 'Helvetica', sans-serif;
     color: #444;
