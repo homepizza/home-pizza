@@ -696,8 +696,9 @@ div#copyright {
     margin-bottom: 70px !important;
 }
 
-.sizes ul, .oprions ul {
+.sizes ul {
     padding-left: 0px;
+    padding-top: 5px;
 }
 
 .sizes ul li, .options ul li {
@@ -705,18 +706,112 @@ div#copyright {
     list-style-position: initial;
 }
 
+/* Размеры ----------------------------------------------------------------------------------------- */
+
 .sizes ul li label {
     white-space: nowrap;
     color: #360300;
     font: 1rem/1.25rem 'BwSurco', 'Helvetica', sans-serif;
     vertical-align: text-bottom;
+
+    display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 23px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
 }
 
-.sizes ul li input {
-    border: 1px solid #777 !important;
-    vertical-align: sub;
-    margin-right: 5px;
+.sizes ul li label:before {
+    content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+    border: 1px solid #777;
+    border-radius: 60%;
 }
+
+.sizes label:hover:before {
+    filter: brightness(120%);
+    /* border-color: #c40022; */
+    /* border-color: #f2b419; */
+}
+
+.options input[type="radio"]:disabled + label:before {
+    filter: grayscale(100%);
+}
+
+.sizes input[type="radio"]:checked + label:after {
+    width: 8px;
+    height: 8px;
+    background: #c40022;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    display: block;
+    left: 4px;
+    top: 5px;
+}
+
+.sizes ul li input[type=radio] {
+    display: none;
+}
+
+/* Борта у пиццы или другие опции -----------------------------------------------------------------*/
+.options {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.options ul {
+    padding-left: 0px;
+    padding-top: 5px;
+}
+
+.options input[type=radio] {
+    display: none;
+}
+
+.options label {
+    display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+
+.options label:before {
+    content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(https://snipp.ru/img/radio-1.png) 0 0 no-repeat;
+}
+
+.options input[type="radio"]:checked + label:before {
+    background: url(https://snipp.ru/img/radio-2.png) 0 0 no-repeat;
+}
+
+.options label:hover:before {
+    filter: brightness(120%);
+}
+
+.options input[type="radio"]:disabled + label:before{
+    filter: grayscale(100%);
+}
+
+/* ----------------------------------------------------------------------------- */
+
+
 
 /* .sizes ul li label:before {
     width: 8px;
