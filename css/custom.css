@@ -36,8 +36,23 @@
         margin-left: 30%;
     }
     .uk-padding-custom {
-        padding: 40px 20px 40px 10px !important;
-        width: 100%;
+        width: 98%;
+    }
+    .options {
+        flex: unset !important;
+        margin-top: 20px !important;
+    }
+}
+
+@media screen and (max-device-width: 960px) {
+    .uk-grid-column-small {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-device-width: 1280px) {
+    .uk-padding-custom {
+        padding: 40px 0px 40px 0px !important;
     }
 }
 
@@ -693,7 +708,7 @@ div#copyright {
 }
 
 .item-body {
-    margin-bottom: 70px !important;
+    margin-bottom: 75px !important;
 }
 
 .sizes ul {
@@ -704,6 +719,10 @@ div#copyright {
 .sizes ul li, .options ul li {
     list-style-type: none;
     list-style-position: initial;
+}
+
+.sizes ul li:not(:first-child) {
+    padding-top: 5px;
 }
 
 /* Размеры ----------------------------------------------------------------------------------------- */
@@ -757,22 +776,30 @@ div#copyright {
     top: 5px;
 }
 
-.sizes ul li input[type=radio] {
+.sizes ul li input[type="radio"] {
     display: none;
 }
 
 /* Борта у пиццы или другие опции -----------------------------------------------------------------*/
 .options {
+    margin-left: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
 
 .options ul {
-    padding-left: 0px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #000;
+    font-size: 0.875rem;
+}
+
+.options ul li:not(:first-child) {
     padding-top: 5px;
 }
 
-.options input[type=radio] {
+.options input[type="checkbox"] {
     display: none;
 }
 
@@ -780,7 +807,7 @@ div#copyright {
     display: inline-block;
 	cursor: pointer;
 	position: relative;
-	padding-left: 25px;
+	padding-left: 23px;
 	margin-right: 0;
 	line-height: 18px;
 	user-select: none;
@@ -789,24 +816,29 @@ div#copyright {
 .options label:before {
     content: "";
 	display: inline-block;
-	width: 17px;
-	height: 18px;
+	width: 12px;
+	height: 12px;
 	position: absolute;
 	left: 0;
 	bottom: 1px;
-	background: url(https://snipp.ru/img/radio-1.png) 0 0 no-repeat;
+    border: 1px solid #ccc;
+    top: 2px;
 }
 
-.options input[type="radio"]:checked + label:before {
-    background: url(https://snipp.ru/img/radio-2.png) 0 0 no-repeat;
-}
-
-.options label:hover:before {
-    filter: brightness(120%);
-}
-
-.options input[type="radio"]:disabled + label:before{
+.options input[type="checkbox"]:disabled + label:before{
     filter: grayscale(100%);
+}
+
+.options input[type="checkbox"]:checked + label:after {
+    width: 17px;
+    height: 13px;
+    /* border-radius: 50%; */
+    background: url('../static/images/icons/ok.svg') no-repeat;
+    position: absolute;
+    content: "";
+    display: block;
+    left: 1px;
+    top: 3px;
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -845,10 +877,6 @@ div#copyright {
     left: 0;
     top: 0;
 } */
-
-.options {
-
-}
 
 .icon-new:before {
     color: red;
