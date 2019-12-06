@@ -89,10 +89,10 @@ li.uk-parent a:hover {
     color: #fd6c2d;
 }
 
-a {
+.news-item a {
     color: #000;
 }
 
-a:hover {
+.news-item a:hover {
     color: #fd6c2d;
 }
