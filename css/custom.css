@@ -42,6 +42,13 @@
         flex: unset !important;
         margin-top: 20px !important;
     }
+    .info-tooltip div span:last-child {
+        white-space: normal !important;
+        font-size: 12px !important;
+    }
+    .info-tooltip.uk-drop {
+        width: 165px !important;
+    }
 }
 
 @media screen and (max-device-width: 960px) {
@@ -703,6 +710,10 @@ div#copyright {
     background-color: #373535;
     /* background-color: #c40022; */
     border-radius: 50%;
+}
+
+.info-tooltip.uk-drop {
+    width: 223px;
 }
 
 .info-tooltip div {
