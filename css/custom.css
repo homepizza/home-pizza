@@ -691,6 +691,42 @@ div#copyright {
     padding: 0 0 5px;
 }
 
+.item-head a {
+    color: #000;
+    width: 19px;
+    font-size: 15px;
+    vertical-align: text-bottom;
+}
+
+.item-head a:hover, .item-head a:focus {
+    color: #fff;
+    background-color: #373535;
+    /* background-color: #c40022; */
+    border-radius: 50%;
+}
+
+.info-tooltip div {
+    font-family: 'Helvetica' !important;
+    color: #fff !important;
+    background-color: #373535;
+    padding: 10px 10px !important;
+    border-radius: 8px;
+}
+
+.info-tooltip div span:first-child {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.info-tooltip div span:last-child {
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.info-tooltip div span ul {
+    margin-top: 10px;
+}
+
 .item-pack {
     display: flex;
     flex-wrap: wrap;
