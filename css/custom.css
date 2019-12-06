@@ -455,6 +455,12 @@ div.uk-card-media-top .item-ingredients p {
     font-size: 1rem;
 }
 
+.description-item {
+    color: #000;
+    font: 0.875rem/1.25rem 'BwSurco', 'Helvetica', sans-serif;
+    padding-bottom: 30px;
+}
+
 .add-custom-button {
     color: #fff;
     background-color: #c40022;
