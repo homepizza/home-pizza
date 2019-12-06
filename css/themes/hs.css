@@ -1,0 +1,98 @@
+@media screen and (max-device-width: 374px) {
+    .logo-link {
+        display: block;
+        width: 33px;
+        height: 20px;
+        background-image: url(../../static/images/logo_sign_hs.svg);
+        background-size: cover;
+        margin-left: 30%;
+    }
+    .uk-padding-custom {
+        width: 98%;
+    }
+    .options {
+        flex: unset !important;
+        margin-top: 20px !important;
+    }
+    .info-tooltip div span:last-child {
+        white-space: normal !important;
+        font-size: 12px !important;
+    }
+    .info-tooltip.uk-drop {
+        width: 165px !important;
+    }
+}
+
+@media screen and (max-device-width: 960px) {
+    .uk-grid-column-small {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-device-width: 1280px) {
+    .uk-padding-custom {
+        padding: 40px 0px 40px 0px !important;
+    }
+}
+
+@media screen and (min-device-width: 374px) {
+    .logo-link {
+        display: block;
+        width: 123px;
+        height: 20px;
+        background-image: url(../../static/images/logo_text_new_hs.svg);
+        background-size: cover;
+        margin-left: 17%;
+    }
+    .mobile-menu-icon {
+        padding-top: 2px !important;
+        cursor: pointer;
+    }
+}
+
+li.uk-parent a:hover {
+    color: #fd6c2d !important;
+}
+
+.sizes input[type="radio"]:checked + label:after {
+    width: 8px;
+    height: 8px;
+    background: #fd6c2d;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    display: block;
+    left: 4px;
+    top: 5px;
+}
+
+.add-custom-button {
+    background-color: #fd6c2d;
+}
+
+.cart-item-group div.cart-item-name {
+    color: #fd6c2d;
+}
+
+.uk-custom-cart div.cart-total span:not(:first-child) {
+    display: block;
+    font: 500 2.25rem/2.25rem 'BwSurcoMedium', 'Helvetica', sans-serif;
+    color: #fd6c2d;
+}
+
+#footer-menu div ul li a {
+    color: #fd6c2d !important;
+    font-size: .875rem;
+}
+
+#schedule ul.special {
+    color: #fd6c2d;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #fd6c2d;
+}

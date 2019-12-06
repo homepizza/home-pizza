@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Meta information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Хоум суши - Доставка суши на дом!</title>
+
+    <!-- CSS Styles -->
+    <link rel="shortcut icon" href="favicon_hs.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="css/custom.css">    
+    <link rel="stylesheet" href="css/themes/hs.css">
+</head>
+<body id="begin">
+    <!-- Шапка сайта -->
+    <div class="uk-container uk-width-expand" style="background-color: #fff;">
+        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-width-5-5 content header-content" uk-grid>
+            <div class="uk-width-1-5 uk-visible@m">
+                <div class="uk-background uk-text-left logo">
+                    <a href="">
+                        <img data-src="static/images/logo_hs.svg" width="70" height="95" alt="Хоум суши" uk-img>
+                    </a>
+                </div>
+            </div>
+            <div class="uk-width-2-5 uk-hidden@m">
+                <div class="uk-background uk-text-left">
+                    <a href="#offcanvas-slide" uk-toggle>
+                        <img src="static/images/icons/humburger.svg" alt="Меню" class="mobile-menu-icon">
+                    </a>
+                    <!-- Мобильное лого -->
+                    <a href="" class="logo-link">&nbsp;</a>
+
+                    <!-- Мобильное меню -->
+                    <div id="offcanvas-slide" uk-offcanvas="mode: reveal; overlay: true">
+                        <div class="uk-offcanvas-bar mobile-menu-bar">
+                            <ul class="uk-nav">
+                                <li class="uk-nav-header">Информация</li>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Зона доставки</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Бонусная система</a></li>
+                                <li><a href="#">Обратная связь</a></li>
+                                <li><a href="#">Правила продажи</a></li>
+                                <li class="uk-nav-header">Наше меню</li>
+                                <li><a href="#">Пицца</a></li>
+                                <li><a href="#">Роллы</a></li>
+                                <li><a href="#">Соусы и приборы</a></li>
+                                <li><a href="#">Напитки</a></li>        
+                                <li><a href="#">Пироги</a></li>
+                                <li><a href="#">ВОК</a></li>
+                                <li><a href="#">Ланчи</a></li>
+                                <li><a href="#">Закуски</a></li>
+                                <li><a href="#">Салаты и супы</a></li>
+                                <li><a href="#">Десерты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-3-5 uk-hidden@m uk-text-right">
+                <!-- Мобильная корзина и личный кабинет -->
+                <span class="mobile-info-icons">
+                    <a href="#">
+                        <span class="uk-badge mobile-points">100 б</span>                    
+                        <img data-src="static/images/icons/user.svg" alt="Личный кабинет" uk-img>
+                    </a>
+                    &nbsp;
+                    <a href="#">
+                        <span class="uk-badge mobile-cart-number">20</span>
+                        <img data-src="static/images/icons/cart.svg" alt="Корзина" uk-img>
+                        <span class="mobile-price">10000 р.</span>
+                    </a>
+                </span>
+            </div>
+            <div class="uk-visible@m uk-width-3-5">
+                <div class="uk-background slogan">
+                    <img data-src="static/images/title_hs.svg" alt="Палочки оближешь :)" uk-img>
+                    <div class="social-links">
+                        <a href="https://vk.com/hp_hs_ru" class="icon-vk"></a>
+                        <a href="https://www.facebook.com/homePIZZAhomeSUSHI" class="icon-fb"></a>
+                        <a href="https://www.instagram.com/homepizza_homesushi/" class="icon-instagram"></a>
+                        <a href="https://ekaterinburg.flamp.ru/firm/khoum_picca_sluzhba_dostavki_piccy-1267165676644774" class="icon-flamp"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-visible@m uk-width-1-5">
+                <div class="uk-background uk-text-right sign-block">
+                    <div class="sign-in">
+                        <span class="uk-badge mobile-points">100 б</span>
+                        <a href="">
+                            <img data-src="static/images/icons/user-main.svg" alt="Профиль" uk-img>
+                            <span>Выйти</span>
+                        </a>
+                    </div>
+                    <div class="phone-number">
+                        <a href="tel:382-0-555">382-0-555</a>
+                    </div>
+                    <div class="phone-number-support">
+                        <a href="tel:345-7-555">345-7-555</a>
+                        <span>горячая линия</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Меню -->
+    <div class="uk-container uk-width-expand" style="background-color: #fff;" uk-sticky>
+        <nav class="uk-navbar-container content" uk-navbar>
+            <div class="uk-navbar-left uk-child-width-1-4 uk-hidden@l" uk-slider="sets: true">
+                <ul class="uk-navbar-nav uk-custom-nav uk-slider-items menu">
+                    <li class="uk-active"><a href="">Пицца</a></li>
+                    <li class="uk-parent"><a href="">Роллы</a></li>
+                    <li class="uk-parent"><a href="">Пироги</a></li>
+                    <li class="uk-parent"><a href="">ВОК</a></li>
+                    <li class="uk-parent"><a href="">Десерты</a></li>
+                    <li class="uk-parent"><a href="">Ланчи</a></li>
+                    <li class="uk-parent"><a href="">Закуски</a></li>
+                    <li class="uk-parent"><a href="">Салаты и супы</a></li>
+                    <li class="uk-parent"><a href="">Напитки</a></li>
+                    <li class="uk-parent"><a href="">Соусы и приборы</a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-left uk-visible@l main-menu">
+                <ul class="uk-navbar-nav uk-custom-nav menu">
+                    <li class="uk-active"><a href="">Пицца</a></li>
+                    <li class="uk-parent"><a href="">Роллы</a></li>
+                    <li class="uk-parent"><a href="">Пироги</a></li>
+                    <li class="uk-parent"><a href="">ВОК</a></li>
+                    <li class="uk-parent"><a href="">Ланчи</a></li>
+                    <li class="uk-parent"><a href="">Закуски</a></li>
+                    <li class="uk-parent"><a href="">Салаты и супы</a></li>
+                    <li class="uk-parent"><a href="">Десерты</a></li>
+                    <li class="uk-parent"><a href="">Напитки</a></li>
+                    <li class="uk-parent"><a href="">Соусы и Приборы</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Слайдер -->
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <div class="uk-background">
+                <div uk-slideshow="max-height: 536; animation: fade; autoplay: true; autoplay-interval: 7400; ratio: 9:3;">
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+    
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img data-src="media/images/hs/slider/др-хоум_2048х640.jpg" alt="" uk-cover uk-img>
+                            </li>
+                        </ul>
+                        
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+                        <div class="uk-position-bottom-center uk-position-small">
+                            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-hidden-hover"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Фильтры -->
+    <div class="uk-container uk-width-expand" style="background-color: #fff;" uk-sticky="offset: 40">
+        <nav class="uk-navbar-container content" uk-navbar>
+                <div class="uk-navbar-left uk-child-width-1-4 uk-hidden@s" uk-slider="sets: true">
+                    <ul class="uk-navbar-nav uk-custom-nav uk-slider-items menu-filters">
+                        <li class="uk-active"><a href="">Все</a></li>
+                        <li class="uk-parent"><a href="">Мясо</a></li>
+                        <li class="uk-parent"><a href="">Рыба</a></li>
+                        <li class="uk-parent"><a href="">Острые</a></li>
+                        <li class="uk-parent"><a href="">Классика</a></li>
+                        <li class="uk-parent"><a href="">Хиты продаж</a></li>
+                        <li class="uk-parent"><a href="">Половинки</a></li>
+                    </ul>
+                </div>
+
+                <div class="uk-navbar-left uk-visible@s">
+                    <ul class="uk-navbar-nav uk-custom-nav menu-filters">
+                        <li class="uk-active"><a href="">Все</a></li>
+                        <li class="uk-parent"><a href="">Мясо</a></li>
+                        <li class="uk-parent"><a href="">Рыба</a></li>
+                        <li class="uk-parent"><a href="">Острые</a></li>
+                        <li class="uk-parent"><a href="">Классика</a></li>
+                        <li class="uk-parent"><a href="">Хиты продаж</a></li>
+                        <li class="uk-parent"><a href="">Половинки</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+
+    <!-- Позиции + Корзина -->
+    <div class="uk-container uk-width-expand" uk-scrollspy="cls: uk-animation-slide-top; target: .up; delay: 500; repeat: true">
+        <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center content" uk-grid>
+            <div>
+                <div class="uk-background uk-padding-custom uk-light">
+                    <!-- Колонка с позициями -->
+                    <div 
+                        class="
+                            uk-grid-column-small 
+                            uk-grid-row-medium
+                            uk-grid-match 
+                            uk-child-width-1-3@l uk-width-3-3@l
+                            uk-child-width-1-2@s uk-width-2-2@s
+                            uk-text-center
+                            items-cards
+                        " 
+                        uk-grid
+                    >
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover">
+                                <div class="uk-card-media-top">
+                                    <a href="#image-item-123" uk-toggle>
+                                        <img data-src="media/images/hs/items/антихайп_catalog_product_list.jpg" alt="Антихайп" uk-img>
+                                    </a>
+                                    <div class="uk-position-top uk-dark" style="opacity: 0.8;">
+                                        <a href="#">Состав</a>
+                                    </div>
+                                </div>
+                                <div id="image-item-123" class="uk-flex-top" uk-modal>
+                                    <div class="uk-transform-origin-center-left uk-animation-scale-up uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                                        <button class="uk-modal-close-outside" type="button" uk-close></button>
+                                        <img src="media/images/hs/items/антихайп_catalog_product_list.jpg" alt="Антихайп">
+                                    </div>
+                                </div>                                    
+                                <div class="uk-card-custom-body">
+                                    <div class="item-head">
+                                        <div>
+                                            Сет Антихайп
+                                            <a href="" uk-icon="info"></a>
+                                            <div class="info-tooltip"
+                                                uk-drop="pos: right-center; animation: uk-animation-fade; duration: 300; offset: 5; delay-hide: 100;"
+                                            >
+                                                <div class="uk-card uk-card-default uk-text-left">
+                                                    <span>Пищевая ценность на 100 г</span>
+                                                    <br>
+                                                    <span>
+                                                        <ul>
+                                                            <li>Белки: 5,950 гр.</li>
+                                                            <li>Жиры: 5,810 гр.</li>
+                                                            <li>Углеводы: 23,980 гр.</li>
+                                                            <li>Калории: 171,980 кКал</li>
+                                                        </ul>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Иконки ингредиентов -->
+                                        <div class="item-pack">
+                                            <div class="custom-icon icon-new"></div>
+                                            <div class="custom-icon icon-carrot"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-body uk-grid-collapse uk-grid-column-small uk-grid-row-medium uk-child-width-expand uk-text-left" uk-grid>
+                                        <!-- Размеры и опции -->
+                                        <div class="sizes">
+                                            <ul>
+                                                <li>
+                                                    <input type="radio" name="item-123" id="size-123-30" checked>
+                                                    <label for="size-123-30">1200 гр. / 56 шт</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="
+                                            uk-grid-collapse 
+                                            uk-child-width-1-2 
+                                            uk-width-2-2 
+                                            uk-grid-match 
+                                            uk-text-center  
+                                            item-control
+                                        " 
+                                    uk-grid>
+                                        <div>
+                                            <!-- Кнопка и цена -->
+                                            <div class="uk-background-muted prices">
+                                                <span>1199 р.</span>
+                                                <sup>1455 р.</sup>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="uk-button add-custom-button">
+                                                Заказать
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover">
+                                <div class="uk-card-media-top">
+                                    <a href="#image-item-1234" uk-toggle>
+                                        <img data-src="media/images/hs/items/волшеб_сад_catalog_product_list.jpg" alt="Волшебный сад" uk-img>
+                                    </a>
+                                    <div class="uk-position-top uk-dark" style="opacity: 0.8;">
+                                        <a href="#">Состав</a>
+                                    </div>
+                                </div>
+                                <div id="image-item-1234" class="uk-flex-top" uk-modal>
+                                    <div class="uk-transform-origin-center-left uk-animation-scale-up uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                                        <button class="uk-modal-close-outside" type="button" uk-close></button>
+                                        <img src="media/images/hs/items/волшеб_сад_catalog_product_list.jpg" alt="Волшебный сад">
+                                    </div>
+                                </div>                                    
+                                <div class="uk-card-custom-body">
+                                    <div class="item-head">
+                                        <div>
+                                            Сет Волшебный сад
+                                            <a href="" uk-icon="info"></a>
+                                            <div class="info-tooltip"
+                                                uk-drop="pos: right-center; animation: uk-animation-fade; duration: 300; offset: 5; delay-hide: 100;"
+                                            >
+                                                <div class="uk-card uk-card-default uk-text-left">
+                                                    <span>Пищевая ценность на 100 г</span>
+                                                    <br>
+                                                    <span>
+                                                        <ul>
+                                                            <li>Белки: 5,950 гр.</li>
+                                                            <li>Жиры: 5,810 гр.</li>
+                                                            <li>Углеводы: 23,980 гр.</li>
+                                                            <li>Калории: 171,980 кКал</li>
+                                                        </ul>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Иконки ингредиентов -->
+                                        <div class="item-pack">
+                                            <div class="custom-icon icon-new"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-body uk-grid-collapse uk-grid-column-small uk-grid-row-medium uk-child-width-expand uk-text-left" uk-grid>
+                                        <!-- Размеры и опции -->
+                                        <div class="sizes">
+                                            <ul>
+                                                <li>
+                                                    <input type="radio" name="item-1234" id="size-1234-30" checked>
+                                                    <label for="size-1234-30">1240 гр. / 56 шт.</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="
+                                            uk-grid-collapse 
+                                            uk-child-width-1-2 
+                                            uk-width-2-2 
+                                            uk-grid-match 
+                                            uk-text-center  
+                                            item-control
+                                        " 
+                                    uk-grid>
+                                        <div>
+                                            <!-- Кнопка и цена -->
+                                            <div class="uk-background-muted prices">
+                                                <span>1199 р.</span>
+                                                <sup>1452 р.</sup>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="uk-button add-custom-button">
+                                                Заказать
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uk-card uk-card-default uk-card-hover">
+                                <div class="uk-card-media-top">
+                                    <a href="#image-item-12345" uk-toggle>
+                                        <img data-src="media/images/hs/items/колизей_catalog_product_list.jpg" alt="Сет Колизей
+                                        " uk-img>
+                                    </a>
+                                    <div class="uk-position-top uk-dark" style="opacity: 0.8;">
+                                        <a href="#">Состав</a>
+                                    </div>
+                                </div>
+                                <div id="image-item-12345" class="uk-flex-top" uk-modal>
+                                    <div class="uk-transform-origin-center-left uk-animation-scale-up uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+                                        <button class="uk-modal-close-outside" type="button" uk-close></button>
+                                        <img src="media/images/hs/items/колизей_catalog_product_list.jpg" alt="Сет Колизей
+                                        ">
+                                    </div>
+                                </div>                                    
+                                <div class="uk-card-custom-body">
+                                    <div class="item-head">
+                                        <div>
+                                                Сет Колизей
+                                            <a href="" uk-icon="info"></a>
+                                            <div class="info-tooltip"
+                                                uk-drop="pos: right-center; animation: uk-animation-fade; duration: 300; offset: 5; delay-hide: 100;"
+                                            >
+                                                <div class="uk-card uk-card-default uk-text-left">
+                                                    <span>Пищевая ценность на 100 г</span>
+                                                    <br>
+                                                    <span>
+                                                        <ul>
+                                                            <li>Белки: 5,950 гр.</li>
+                                                            <li>Жиры: 5,810 гр.</li>
+                                                            <li>Углеводы: 23,980 гр.</li>
+                                                            <li>Калории: 171,980 кКал</li>
+                                                        </ul>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Иконки ингредиентов -->
+                                        <div class="item-pack">
+                                            <div class="custom-icon icon-new"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item-body uk-grid-collapse uk-grid-column-small uk-grid-row-medium uk-child-width-expand uk-text-left" uk-grid>
+                                        <!-- Размеры и опции -->
+                                        <div class="sizes">
+                                            <ul>
+                                                <li>
+                                                    <input type="radio" name="item-12345" id="size-12345-30" checked>
+                                                    <label for="size-12345-30">1500 гр. / 72 шт.</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="
+                                            uk-grid-collapse 
+                                            uk-child-width-1-2 
+                                            uk-width-2-2 
+                                            uk-grid-match 
+                                            uk-text-center  
+                                            item-control
+                                        " 
+                                    uk-grid>
+                                        <div>
+                                            <!-- Кнопка и цена -->
+                                            <div class="uk-background-muted prices">
+                                                <span>1199 р.</span>
+                                                <sup>1642 р.</sup>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="uk-button add-custom-button">
+                                                Заказать
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Scroll Button -->
+                    <a href="#begin" class="up uk-hidden@m" uk-scroll="duration: 750;">
+                        <i class="up-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="uk-width-1-4@s uk-visible@m">
+                <div class="uk-background uk-padding-custom uk-light uk-visible@m" style="z-index: 0;" uk-sticky="offset: 100; bottom: true">
+                    <!-- Колонка с корзиной -->
+                    <div class="uk-card uk-card-default uk-custom-cart uk-text-left">
+                        <span>Ваш заказ</span>
+                        <div class="cart-item-group">
+                            <span>Пицца</span>
+                            <ul>
+                                <li>
+                                    <div class="cart-item-name">Акция 6 пицц</div>
+                                    <div class="cart-item-description">2199 р. — 30 см / 3275 гр.</div>
+                                    <div class="cart-item-number">
+                                        <span class="remove-item">&nbsp;</span>
+                                        <input type="number" value="1" min="1">
+                                        <span class="add-item">&nbsp;</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart-item-group">
+                            <span>Роллы</span>
+                            <ul>
+                                <li>
+                                    <div class="cart-item-name">Сет Волшебный сад</div>
+                                    <div class="cart-item-description">1199 р. — 1240 гр. / 56 шт.</div>
+                                    <div class="cart-item-number">
+                                        <span class="remove-item">&nbsp;</span>
+                                        <input type="number" value="2" min="1">
+                                        <span class="add-item">&nbsp;</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart-total">
+                            <span>Итого:</span>
+                            <span>3398.00 р</span>
+                        </div>
+                        <div class="cart-button uk-text-center">
+                            <button class="uk-button add-custom-button">Оформить заказ</button>
+                        </div>
+                        <div class="cart-info-actions uk-text-center">
+                            <a href="" class="cart-link">Правила продажи</a>
+                            <span>|</span>
+                            <a href="" class="cart-link">Отменить заказ</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Scroll Button -->
+                <a href="#begin" class="up" uk-scroll="duration: 750;">
+                    <i class="up-icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <div class="uk-container uk-width-expand" style="background-color: #fff;">
+        <!-- Контент часть -->
+        <div class="uk-container uk-width-expand content uk-background">
+            <!-- Новости -->
+            <div class="uk-container uk-width-expand news-feed">
+                <a href="" class="news-feed-title header-link">Новости</a>
+                <div class="uk-grid-collapse uk-child-width-expand@s" uk-grid>
+                    <!-- Новость -->
+                    <div>
+                        <div class="uk-background news-item">
+                            <div>13.07.19</div>
+                            <a href="">Ремонт филиала на Фролова 20</a>   
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background news-item">
+                            <div>09.05.19</div>
+                            <a href="">С годовщиной Великой Победы!</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background news-item">
+                            <div>30.04.19</div>
+                            <a href="">График работы на майские праздники</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background news-item">
+                            <div>25.03.19</div>
+                            <a href="">Запускаем БОНУСЫ! Двойной кэшбек весь апрель!</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-background news-item">
+                            <div>08.03.19</div>
+                            <a href="">С праздником, милые дамы!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Информационный блок -->
+            <div class="uk-container uk-width-expand" style="margin-bottom: 30px; margin-top: 50px;">
+                <div class="uk-grid-collapse uk-child-width-expand@s uk-text-right" uk-grid>
+                    <div class="uk-hidden@l">
+                            <div class="uk-background uk-text-left">
+                                <!-- Расписание приема заказов -->
+                                <div id="schedule">
+                                    <span>
+                                        Заказы на доставку <br>пиццы принимаются
+                                    </span>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <span>пн</span>
+                                                <span>10:00 - 00:00</span>
+                                            </li>
+                                            <li>
+                                                <span>вт</span>
+                                                <span>10:00 - 00:00</span>
+                                            </li>
+                                            <li>
+                                                <span>ср</span>
+                                                <span>10:00 - 00:00</span>
+                                            </li>
+                                            <li>
+                                                <span>чт</span>
+                                                <span>10:00 - 00:00</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="special">
+                                            <li>
+                                                <span>пт</span>
+                                                <span>с 10:00</span>
+                                            </li>
+                                            <li>
+                                                <span>сб</span>
+                                                <span>круглосуточно</span>
+                                            </li>
+                                            <li>
+                                                <span>вс</span>
+                                                <span>до 00:00</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+                        <div class="uk-background uk-width-expand">
+                            <!-- Телефон и информация компании -->
+                            <div id="info" class="uk-text-left">
+                                <div class="footer-phone">
+                                    <span>Телефоны доставки пиццы</span>
+                                    <span>382·0·555</span>
+                                </div>     
+                                <h2>
+                                    Бесплатная доставка вкусной пиццы и суши <br>
+                                            на дом и в офис по Екатеринбургу
+                                </h2>
+                                <div id="copyright">
+                                    <p>
+                                        © 2008-2019 Служба доставки пиццы и суши «Хоум Пицца» <br>
+                                        ООО «Вершина» ОГРН 1116658000106, ИНН 6658375056 <br>
+                                        Адрес: 620028, г. Екатеринбург, ул. Малышева, 164, офис 405 <br>
+                                        www:  <a href="">https://home-pizza.com</a>, <a href="">Правила продажи </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-visible@l">
+                        <div class="uk-background uk-text-left">
+                            <!-- Расписание приема заказов -->
+                           <div id="schedule" style="margin-left: 10%;">
+                                <span>
+                                    Заказы на доставку <br>пиццы принимаются
+                                </span>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <span>пн</span>
+                                            <span>10:00 - 00:00</span>
+                                        </li>
+                                        <li>
+                                            <span>вт</span>
+                                            <span>10:00 - 00:00</span>
+                                        </li>
+                                        <li>
+                                            <span>ср</span>
+                                            <span>10:00 - 00:00</span>
+                                        </li>
+                                        <li>
+                                            <span>чт</span>
+                                            <span>10:00 - 00:00</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="special">
+                                    <li>
+                                        <span>пт</span>
+                                        <span>с 10:00</span>
+                                    </li>
+                                    <li>
+                                        <span>сб</span>
+                                        <span>круглосуточно</span>
+                                    </li>
+                                    <li>
+                                        <span>вс</span>
+                                        <span>до 00:00</span>
+                                    </li>
+                                </ul>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="uk-visible@l">
+                        <div class="uk-background uk-text-left" style="margin-left: 20%;">
+                            <div id="footer-menu" class="uk-width-expand" uk-grid>
+                                <div>
+                                    <a href="">
+                                        <img src="static/images/logo_hs.svg" alt="Хоум пицца">
+                                    </a>
+                                </div>
+                                <div>
+                                    <ul class="uk-nav">
+                                        <li class="uk-active"><a href="">О компании</a></li>
+                                        <li><a href="">Акции</a></li>
+                                        <li><a href="">Новости</a></li>
+                                        <li><a href="">Наше меню</a></li>
+                                        <li><a href="">Доставка</a></li>
+                                        <li><a href="">Обратная связь</a></li>
+                                        <li><a href="">Сотрудничество</a></li>
+                                        <li><a href="">Акция "На день рождения"</a></li>
+                                        <li><a href="">Вакансии</a></li>
+                                        <li><a href="">Бонусная система</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+</body>
+<script src="static/uikit/js/uikit.min.js"></script>
+<script src="static/uikit/js/uikit-icons.min.js"></script>
+<script src="js/custom.js"></script>
+</html>
