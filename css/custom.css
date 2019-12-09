@@ -502,6 +502,51 @@ div.uk-card-media-top .item-ingredients p {
     margin-bottom: 15px;
 }
 
+.single-offer {
+    font-family: 'BwSurco', 'Helvetica', sans-serif;
+}
+
+.single-offer h2 {
+    color: #d27d2c;
+    border-bottom: 1px dashed #d27d2c;
+}
+
+.single-offer div.salary-offer {
+    font-size: 1.3em;
+    color: #d93600;
+    line-height: 1.3em;
+    margin: 10px 0px;
+}
+
+.single-offer div.about-company {
+    margin: 10px 0px;
+    font-style: italic;
+}
+
+.single-offer div.info-list {
+    margin: 25px 0px;
+    font-size: 0.9em;
+    color: #222;
+}
+
+.single-offer div.contacts-info {
+    margin-bottom: 30px;
+    /* color: #360300; */
+    font-style: italic;
+}
+
+.single-offer div.contacts-info span:first-child {
+    border-bottom: 1px solid #360300;
+}
+
+.single-offer div.contacts-info span:not(:first-child) {
+    display: block;
+}
+
+.single-offer div.info-list ul {
+    margin-top: 0px;
+}
+
 a.callback-button {
     font: 1.1em 'BwSurco', 'Helvetica', sans-serif;
     color: #fff;
