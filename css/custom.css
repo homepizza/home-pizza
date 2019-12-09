@@ -202,6 +202,38 @@ i.up-icon:hover {
     font-size: 1.5rem;
 }
 
+.news-feed-category {
+    color: #222;
+    margin-top: 30px;
+}
+
+.news-feed-category div.news-category-date {
+    font-size: 0.875rem;
+    color: #000;
+}
+
+.news-category-item {
+    max-width: 720px;
+}
+
+.news-category-item a {
+    color: #360300;
+    font: 700 1rem 'BwSurcoBold', Helvetica, sans-serif;
+    text-decoration-line: underline;
+}
+
+.news-category-item a:hover {
+    color: #c40022;
+}
+
+.news-category-item p {
+    font-size: 0.9em;
+}
+
+.news-pagination {
+    font-size: 19px;
+}
+
 .news-item div{
     font-size: .75rem;
 }
