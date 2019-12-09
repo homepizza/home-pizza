@@ -156,6 +156,44 @@
                 <a href="#" class="uk-border-rounded">Офис</a>
             </li>
         </ul>
+        <div id="callback-modal" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-margin-auto-vertical">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Отклик: "Водитель-курьер"</h2>
+                </div>
+                <div class="uk-modal-body">
+                    <label for="callback-info-name">
+                        ФИО:
+                        <input class="uk-input" type="text" name="info-name" id="callback-info-name">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="callback-info-phone">
+                        Контактный телефон:
+                        <input class="uk-input" type="text" name="info-phone" id="callback-info-phone">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="callback-info-resume-file" class="resume">
+                        Файл:
+                        <div uk-form-custom="target: true">
+                            <input type="file" id="callback-info-resume-file">
+                            <input class="uk-input uk-form-width-medium" type="text" placeholder="Выбрать файл" disabled>
+                        </div>
+                    </label>
+                    <br>
+                    <br>
+                    <label for="callback-info-comment">
+                        Комментарий:
+                        <textarea class="uk-textarea" type="text" name="info-comment" id="callback-info-comment"></textarea>
+                    </label>
+                </div>
+                <div class="uk-modal-footer">
+                    <button class="uk-button">Отправить</button>
+                </div>
+            </div>
+        </div>
         <ul class="uk-child-width-1-2@s uk-child-width-1-3@m uk-width-exapnd uk-text-left js-filter" style="margin: 0 auto;" uk-grid>
             <li data-tags="delivery">
                 <div class="uk-card uk-card-body uk-transition-toggle">
@@ -164,7 +202,7 @@
                     </div>
                     <div class="work-time">Тип занятости: индивидуальный график</div>
                     <div class="salary">Заработная плата: от 15000 - 45000 руб.</div>
-                    <a class="callback-button" href="">Откликнуться</a>
+                    <a class="callback-button" href="#callback-modal" uk-toggle>Откликнуться</a>
                 </div>
             </li>     
             <li data-tags="kitchen">
