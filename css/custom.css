@@ -448,6 +448,7 @@ div.uk-card-media-top .item-ingredients p {
     color: #360300;
     border-bottom: 1px dashed #360300;
     display: inline;
+    font-family: 'BwSurco', 'Helvetica', sans-serif;
 }
 
 .content-promo div.uk-card img {
@@ -465,8 +466,57 @@ div.uk-card-media-top .item-ingredients p {
     background: #993914;
 }
 
-.content-filters {
-    font-size: 1rem;
+/* Для страницы вакансии */
+
+.content-offers .special-offer {
+    border: 2px dashed #c7c6c6;
+}
+
+.content-offers .special-offer div:not(:first-child) {
+    margin-bottom: 15px;
+}
+
+.content-offers ul.uk-subnav .uk-active a {
+    background-color: #f2b419;
+    color: #fff !important;
+}
+
+.content-offers div.position-name a {
+    font: 700 1.3em 'BwSurco', 'Helvetica', sans-serif;
+    color: #9b3916;
+}
+
+.content-offers div.position-name a:hover {
+    color: #c40022;
+}
+
+.content-offers div.work-time {
+    margin-top: 10px;
+    color: #000;
+    font-size: 0.8em;
+}
+
+.content-offers div.salary {
+    color: #000;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+a.callback-button {
+    font: 1.1em 'BwSurco', 'Helvetica', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    background: #d93600;
+    padding: .4em .7em;
+    margin: 10px 0 0;
+    border: 2px solid #fc6e2e;
+    border-radius: 13px;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+
+a.callback-button:hover {
+    background: #fd6d2e;
 }
 
 .description-item {
