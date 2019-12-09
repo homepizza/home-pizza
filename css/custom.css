@@ -439,6 +439,32 @@ div.uk-card-media-top .item-ingredients p {
     position: relative;
 }
 
+.content-promo {
+    background-color: #fff;
+    padding-top: 30px;
+}
+
+.content-promo h2 {
+    color: #360300;
+    border-bottom: 1px dashed #360300;
+    display: inline;
+}
+
+.content-promo div.uk-card img {
+    border-radius: 10px;
+}
+
+.content-promo .promo-title {
+    font-family: 'BwSurcoMedium', 'Helvetica', sans-serif;
+    font-size: 22px;
+    color: #d93600;
+    padding-top: 5px;
+}
+
+.content-promo div.uk-card .uk-badge {
+    background: #993914;
+}
+
 .content-filters {
     font-size: 1rem;
 }
