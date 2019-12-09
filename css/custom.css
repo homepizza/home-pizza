@@ -519,6 +519,16 @@ a.callback-button:hover {
     background: #fd6d2e;
 }
 
+/* Модальное окно обратной связи */
+#callback-modal h2 {
+    font: 1.0em 'BwSurcoBold', 'Helvetica', sans-serif;
+    font-size: 25px;
+}
+
+#callback-modal .uk-input:focus, .uk-select:focus, .uk-textarea:focus {
+    border-color: #c40022;
+}
+
 .description-item {
     color: #000;
     font: 0.875rem/1.25rem 'BwSurco', 'Helvetica', sans-serif;
