@@ -579,6 +579,19 @@ div.uk-card-media-top .item-ingredients p {
     margin-top: 0px;
 }
 
+.single-news h2 {
+    font-size: 19px;
+    font-family: 'BwSurcoBold', 'Helvetica', sans-serif;
+}
+
+.single-news div.uk-badge {
+    background: #993914;
+}
+
+.single-news div.description-item {
+    padding-top: 20px;
+}
+
 a.callback-button {
     font: 1.1em 'BwSurco', 'Helvetica', sans-serif;
     color: #fff;
@@ -610,6 +623,11 @@ a.callback-button:hover {
     color: #000;
     font: 0.875rem/1.25rem 'BwSurco', 'Helvetica', sans-serif;
     padding-bottom: 30px;
+}
+
+.single-news div.uk-bage {
+    display: flex;
+    float: left;
 }
 
 .add-custom-button {
